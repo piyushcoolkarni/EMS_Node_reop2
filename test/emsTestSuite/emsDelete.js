@@ -3,7 +3,7 @@ module.exports = {
 	  client
       .url('http://172.27.59.112:3003/#/add')
       .waitForElementVisible('body', 1000)
-      .assert.title('Employee Application')
+      .verify.title('Employee Application')
       .end();
       /*  .click('body > div.ng-scope > div > div > table > thead > tr:nth-child(2) > td:nth-child(5) > input')
 	  .url('http://172.27.59.65:3000/#/getData')
