@@ -3,8 +3,8 @@ module.exports = {
     client
       .url('http://172.27.59.112:3003/#/add')
       .waitForElementVisible('body', 1000)
-      .assert.title('Employee Application')
-      .assert.visible('input')
+      .verify.title('Employee Application')
+      .verify.visible('input')
       .setValue('input[name=code]', '4444')
 	  .setValue('input[name=name]', 'Navin')
 	  .setValue('input[name=city]', 'chennai')
@@ -16,7 +16,7 @@ module.exports = {
 	  client
 	  .url('http://172.27.59.112:3003/#/add')
 	  .waitForElementVisible('body', 1000)
-	  .assert.title('Employee Application')
+	  .verify.title('Employee Application')
 	.end();
 /*	.getText('body > div.ng-scope > div > div > table > thead > tr.ng-scope > td:nth-child(1)', function(result) {
 		
