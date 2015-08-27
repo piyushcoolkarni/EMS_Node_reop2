@@ -7,7 +7,7 @@ var gulp = require('gulp');
 gulp.task('nightwatch',function(){
 return gulp.src('nightwatch.js')
     .pipe(nightwatch({
-	configFile:'node_modules/nightwatch/bin/nightwatch.json'
+	configFile:'../node_modules/nightwatch/bin/nightwatch.json'
 	}))
 
 
