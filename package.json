@@ -44,6 +44,8 @@
     "mocha": "^2.2.1",
     "mocha-lcov-reporter": "0.0.2",
     "mongoose": "^4.1.3",
+    "nightwatch": "^0.7.11",
+    "nightwatch-html-reporter": "^1.0.2",
     "nodemon": "^1.4.1",
     "should": "^7.0.4",
     "superagent": "^1.1.0",
