@@ -91,5 +91,5 @@ return gulp.src('nightwatch.js')
 });
 
 
-gulp.task('nightwatch',['test','lint','mocha']); 
-gulp.task('default',['nightwatch']); 
+gulp.task('default',['test','lint','mocha']); 
+ 
