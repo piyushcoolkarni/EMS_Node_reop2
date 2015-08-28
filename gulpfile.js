@@ -2,9 +2,9 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var istanbul = require('gulp-istanbul');
 var jshint = require('gulp-jshint');
-//var gulp-jshint-html-reporter=require('gulp-jshint-html-reporter');
+var gulp-jshint-html-reporter=require('gulp-jshint-html-reporter');
 var mocha = require('gulp-mocha');
- //var nightwatch=require('gulp-nightwatch');
+ var nightwatch=require('gulp-nightwatch');
 
 gulp.task('run', function(){
     nodemon({
@@ -92,3 +92,4 @@ return gulp.src('nightwatch.js')
 
 
 gulp.task('default',['test','lint','mocha']); 
+gulp.task('nightwatch',['nightwatch']); 
